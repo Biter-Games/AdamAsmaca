@@ -1,0 +1,200 @@
+body {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 4px 4px 0px rgb(12, 133, 133);
+    background-color: rgb(3, 56, 60);
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(38, 93, 63);
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+p {
+    margin: 5px;
+}
+
+#kelimeTuru{
+    padding: 4px 7px;
+    border-radius: 10px;
+    background-color: rgb(24, 110, 110);
+}
+
+.Texts {
+    margin: 20px;
+    font-size: 30px;
+}
+#kelime{
+    font-size: 50px;
+}
+
+#UstKutu{
+    max-width: 900px; /*Bu iyi*/
+    margin: auto;
+    line-height: 1;
+    flex-wrap: wrap; /* Taşan elemanlar alta geçsin */
+    display: flex;
+    border: 5px solid black;
+}
+
+
+
+canvas {
+    margin: 20px auto;
+    display: block;
+    border: 1px solid black;
+}
+
+.info {
+    background-color: aqua;
+    padding-top: 10%;
+    padding-top: 10%;
+}
+
+.keyboard {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 15px;
+    color: aliceblue;
+    font-family: 'Russo One', sans-serif;
+    background-color: rgb(13, 131, 105);
+    box-shadow: 2px 5px 0px 0 rgb(9, 196, 156);
+    cursor: pointer;
+    transition: padding 0.3s, background-color 0.3s, box-shadow 0.3s, width 0.2s, height 0.2s;
+}
+
+button:hover {
+    width: 63px;
+    height: 63px;
+    background-color: rgb(12, 135, 135);
+    box-shadow: 2px 5px 0px 0 rgb(12, 125, 125);
+}
+
+button:active {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(26, 202, 202);
+    box-shadow: 2px 5px 0px 0 rgb(17, 182, 146);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(13, 131, 105);
+    padding: 15px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.close{
+    display:none;
+}
+
+#OynaButton{
+    width: auto;
+    height: auto;
+    margin: 30px;
+    font-size: 50px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#OynaButton:hover {
+    padding: 15px 25px;
+    background-color: rgb(12, 135, 135);
+    box-shadow: 2px 5px 0px 0 rgb(12, 125, 125);
+}
+
+#OynaButton:active {
+    padding: 10px 20px;
+    background-color: rgb(26, 246, 246);
+    box-shadow: 2px 5px 0px 0 rgb(17, 182, 146);
+}
+
+
+#OynaButtonSmall{
+    width: auto;
+    height: auto;
+    margin: 40px;
+    font-size: 30px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#OynaButtonSmall:hover {
+    padding: 7px 12px;
+    background-color: rgb(12, 135, 135);
+    box-shadow: 2px 5px 0px 0 rgb(12, 125, 125);
+}
+#OynaButtonSmall:active {
+    padding: 5px 10px;
+    background-color: rgb(26, 246, 246);
+    box-shadow: 2px 5px 0px 0 rgb(17, 182, 146);
+}
+
+#UstKutu2{
+    max-width: 700px;
+    margin: auto;
+}
+
+#OynaButtonSmall2{
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: rgb(31, 129, 186);
+    box-shadow: 2px 5px 0px 0 rgb(0, 76, 116);
+    text-align: center;
+}
+
+#OynaButtonSmall2:hover {
+    padding: 7px 12px;
+    background-color: rgb(12, 135, 135);
+    box-shadow: 2px 5px 0px 0 rgb(12, 125, 125);
+}
+#OynaButtonSmall2:active {
+    padding: 5px 10px;
+    background-color: rgb(26, 246, 246);
+    box-shadow: 2px 5px 0px 0 rgb(17, 182, 146);
+}
+.selected{
+    padding: 7px 12px;
+    background-color: rgb(12, 135, 35) !important;
+    box-shadow: 2px 5px 0px 0 rgb(12, 125, 29) !important;
+}
