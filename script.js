@@ -93,8 +93,8 @@ function ApplySettings() {
 // Asma Adamı Çiz
 function drawHangman() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Temizle
-    ctx.fillStyle = 'white';   // Doldurma rengi
     ctx.strokeStyle = 'white'; // Çizgi rengi
+    ctx.lineWidth = 5;
 
     // Direk
     ctx.beginPath();
@@ -159,6 +159,7 @@ function drawHangman() {
         ctx.moveTo(130, 230);
         ctx.lineTo(180, 300);
         ctx.stroke();
+        ctx.strokeStyle = 'red'; // Çizgi rengi
     }
 }
 
@@ -225,18 +226,13 @@ function olusturKlavye() {
 
 function GameOver(){
 
-    for (let i = 0; i < gosterilenKelime.length; i++) {
-        if (gosterilenKelime[i] == '_') {
-            console.log(gosterilenKelime);
-            console.log(gosterilenKelime[i]);
-            console.log(secilenKelime[i]);
-            gosterilenKelime[i] = secilenKelime[i]
-            gosterilenKelime[i].style.setProperty("background-color", "rgb(130, 0, 0)", "important");
-        }else{
-            gosterilenKelime[i].style.setProperty("background-color", "rgb(0, 130, 0)", "important");
-        }
-        
-    }
+            gosterilenKelime = [...secilenKelime];
+            innerHTML("kelime",gosterilenKelime);
+
+            
+            setTimeout(() => {
+                yeniKelime();
+            }, 5000);
 }
 
 // Harf tahmin et
@@ -275,9 +271,7 @@ function tahminYap(harf,buton) {
     // Oyun bitti mi?
     if (yanlisTahmin >= 6) {
         alert("Oyun Bitti! Kaybettiniz!");
-        console.log("AAAA");
         GameOver();
-        yeniKelime();
     } else if (!gosterilenKelime.includes('_')) {
         alert("Oyun Bitti! Kazandınız!");
         yeniKelime();

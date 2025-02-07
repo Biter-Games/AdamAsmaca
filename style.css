@@ -48,7 +48,6 @@ p {
     line-height: 1;
     flex-wrap: wrap; /* Taşan elemanlar alta geçsin */
     display: flex;
-    border: 5px solid black;
 }
 
 
@@ -56,12 +55,9 @@ p {
 canvas {
     margin: 20px auto;
     display: block;
-    border: 1px solid black;
 }
 
 .info {
-    background-color: aqua;
-    padding-top: 10%;
     padding-top: 10%;
 }
 
@@ -119,6 +115,16 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+#footerr{
+    bottom: 0;
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 15px;
 }
 
 .close{
