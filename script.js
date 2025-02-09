@@ -217,10 +217,27 @@ function olusturKlavye() {
 
     harfler.forEach(harf => {
         let buton = document.createElement("button");
+        buton.id = harf;
         buton.innerText = harf;
         buton.onclick = () => tahminYap(harf,buton);
         klavye.appendChild(buton);
     });
+    
+    document.addEventListener('keydown', function(event) {
+        console.log(event);
+        
+        harfler.forEach(harf => {
+        
+            if (event.key == harf) {
+                
+                console.log(document.getElementById(event.key));s
+    
+                tahminYap(harf,document.getElementById(event.key));
+            }
+
+        });
+    });
+    
 }
 
 
@@ -277,5 +294,3 @@ function tahminYap(harf,buton) {
         yeniKelime();
     }
 }
-
-
